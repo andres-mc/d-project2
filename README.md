@@ -81,7 +81,7 @@ https://ibb.co/nn9KjWv
 
 ## Component Heirarchy
 
--frame
+-App.js
   
   -homepage
 
@@ -106,5 +106,16 @@ https://ibb.co/nn9KjWv
 ## SWOT Analysis
 
 Heading into project week and with all your planning in mind, consider your Strengths, Weaknesses, Opportunities, and Threats as they relate to your final project. How will you overcome your weaknesses and threats?
+
+Weaknesses:
+
+Jsx and react coding - review the class exammples from the past week / google for more information and ask the piers & fellow programer friends.
+
+Strengths:
+Css and graphic design for the app.
+
+Opportunities:
+Better understanding of React and all the capabilities it has for me to create future apps.
+
 
 
