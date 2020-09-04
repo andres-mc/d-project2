@@ -48,17 +48,19 @@ https://ibb.co/MMZcFZD
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- create compomnents app following skeleton mockup
+- link api / json & render data on page
+- display random quotes
+- menu functions
+- create sub menu for user entry
+- post user data to airtable
+- make user data into icons [mockup icon goals]
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- css styles for app
+- hover function on goals icons
 
 ## Project Schedule
 
@@ -68,13 +70,13 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|Sep 3| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Sep 4| Project Approval | Incomplete
+|Sep 8| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Sep 9| Pseudocode / actual code | Incomplete
+|Sep 10| Initial Clickable Model  | Incomplete
+|Sep 10| MVP | Incomplete
+|Sep 11| Presentations | Incomplete
 
 ## Priority Matrix
 
