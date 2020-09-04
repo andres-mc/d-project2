@@ -79,4 +79,12 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 https://ibb.co/nn9KjWv
 
+## Component Heirarchy
+
+A visual tree of your components, depicting the parent/child relationships, as well as an indication of which will be class components, requiring state, and which will be functional components, taking props.
+
+## SWOT Analysis
+
+Heading into project week and with all your planning in mind, consider your Strengths, Weaknesses, Opportunities, and Threats as they relate to your final project. How will you overcome your weaknesses and threats?
+
 
