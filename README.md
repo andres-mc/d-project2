@@ -4,15 +4,33 @@
 
 ## Project Name
 
-The name of your project.
+BeLeif
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+BeLeif is an environment which will show you positive quotes, thus giving you a push to move in a simple and positive direction today. You will have a space which you can plan this day by writing your goals within the application.
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+Api URL:
+https://type.fit/api/quotes
+
+[
+{
+text: "Genius is one percent inspiration and ninety-nine percent perspiration.",
+author: "Thomas Edison"
+},
+{
+text: "You can observe a lot just by watching.",
+author: "Yogi Berra"
+},
+{
+text: "A house divided against itself cannot stand.",
+author: "Abraham Lincoln"
+}
+]
+
+// ...6577 code lines
 
 ## Wireframes
 
