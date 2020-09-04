@@ -81,7 +81,27 @@ https://ibb.co/nn9KjWv
 
 ## Component Heirarchy
 
-A visual tree of your components, depicting the parent/child relationships, as well as an indication of which will be class components, requiring state, and which will be functional components, taking props.
+-frame
+  
+  -homepage
+
+    -logo
+
+    -nav bar
+      
+      -button 1 - quotes
+        -random quotes action
+      
+      -button 2 - user input
+        -sub menu
+          -"goals" frame
+            -"priority" radio buttons
+            -text input
+            -clear field button
+            -submit
+    
+    -goal icons
+    	-user input displayed as icons by priority
 
 ## SWOT Analysis
 
