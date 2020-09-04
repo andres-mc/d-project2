@@ -81,9 +81,9 @@ https://ibb.co/nn9KjWv
 
 ## Component Heirarchy
 
--App.js
+    -App.js
   
-  -homepage
+    -homepage
 
     -logo
 
