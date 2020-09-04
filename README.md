@@ -43,9 +43,7 @@ https://ibb.co/FV4cvR9
 Free hand version:
 https://ibb.co/MMZcFZD
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+### MVP/PostMVP 
 
 #### MVP 
 
@@ -104,8 +102,6 @@ https://ibb.co/nn9KjWv
     	-user input displayed as icons by priority
 
 ## SWOT Analysis
-
-Heading into project week and with all your planning in mind, consider your Strengths, Weaknesses, Opportunities, and Threats as they relate to your final project. How will you overcome your weaknesses and threats?
 
 Weaknesses:
 
