@@ -43,9 +43,7 @@ https://ibb.co/FV4cvR9
 Free hand version:
 https://ibb.co/MMZcFZD
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+### MVP/PostMVP 
 
 #### MVP 
 
@@ -81,10 +79,39 @@ https://ibb.co/nn9KjWv
 
 ## Component Heirarchy
 
-A visual tree of your components, depicting the parent/child relationships, as well as an indication of which will be class components, requiring state, and which will be functional components, taking props.
+    -App.js
+  
+    -homepage
+
+    -logo
+
+    -nav bar
+      
+      -button 1 - quotes
+        -random quotes action
+      
+      -button 2 - user input
+        -sub menu
+          -"goals" frame
+            -"priority" radio buttons
+            -text input
+            -clear field button
+            -submit
+    
+    -goal icons
+    	-user input displayed as icons by priority
 
 ## SWOT Analysis
 
-Heading into project week and with all your planning in mind, consider your Strengths, Weaknesses, Opportunities, and Threats as they relate to your final project. How will you overcome your weaknesses and threats?
+Weaknesses:
+
+Jsx and react coding - review the class exammples from the past week / google for more information and ask the piers & fellow programer friends.
+
+Strengths:
+Css and graphic design for the app.
+
+Opportunities:
+Better understanding of React and all the capabilities it has for me to create future apps.
+
 
 
