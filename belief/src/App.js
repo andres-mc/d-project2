@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import Homepage from './Homepage'
+import Quote from './Quote'
+import Logo from './Logo'
 
 function App() {
   return (
     <div className="App">
-      <h1>logo</h1>
-      <h1>BeLief</h1>
-      <Homepage />
+      <Logo />
+      <Quote />
+      
     </div>
   );
 }
