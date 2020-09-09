@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(221, 251, 255);
 }
 
 .App-logo {
@@ -37,8 +38,6 @@
   }
 }
 /* ------------------------------- */
-
-
 .LogoContainer {
   display: flex;
   flex-direction: row;
