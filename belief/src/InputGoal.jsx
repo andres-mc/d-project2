@@ -13,8 +13,8 @@ const GoalInput = () => {
     };
     
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/belief?`;
-    console.log()
-    const responser = await axios.post(
+    
+    const response = await axios.post(
       airtableURL,
       { fields },
       { headers: {
@@ -22,10 +22,10 @@ const GoalInput = () => {
         'Content-Type': 'application/json',
       }}
       );
-    console.log(responser);
+    console.log(response);
   }
 
-  // (label+input)*3 with emmet
+  
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="goal">Goal:</label>
@@ -35,13 +35,6 @@ const GoalInput = () => {
         value={goal}
         onChange={(event) => setGoal(event.target.value)}
       />
-      {/* {/* <label htmlFor="text">Text:</label>
-      <textarea
-        name="text"
-        type="text"
-        value={text}
-        onChange={(event) => setText(event.target.value)}
-      /> */}
       <br/>
       <label htmlFor="priority">Priority:</label>
       <input
