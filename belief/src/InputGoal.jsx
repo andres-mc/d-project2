@@ -12,7 +12,7 @@ const GoalInput = () => {
       prior,
     };
     
-    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/belief?`;
+    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/data?`;
     
     const response = await axios.post(
       airtableURL,
