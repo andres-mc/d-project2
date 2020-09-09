@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
 
 const StyledSideNav1 = styled.div`
   position: fixed;
@@ -29,12 +30,15 @@ export default class Sidebar extends React.Component {
   render() {
     return (
       <div>
+        <Link to="/">
         <StyledSideNav>
           <span>quotes</span>
-        </StyledSideNav>
+        </StyledSideNav></Link>
+        <Link to="/goal">
         <StyledSideNav1>
           <span>goals</span>
-        </StyledSideNav1>
+          </StyledSideNav1>
+        </Link>
       </div>
       
     );
