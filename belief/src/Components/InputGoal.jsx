@@ -5,7 +5,7 @@ import axios from 'axios';
 import Quote from './Quote'
 import Sidebar from './Sidebar'
 
-const GoalInput = () => {
+const GoalInput = (props) => {
   const [goal, setGoal] = useState('');
   const [prior, setPrior] = useState('');
 
@@ -18,7 +18,7 @@ const GoalInput = () => {
     
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/data?`;
     
-    const response = await axios.post(
+    await axios.post(
       airtableURL,
       { fields },
       { headers: {
@@ -26,7 +26,7 @@ const GoalInput = () => {
         'Content-Type': 'application/json',
       }}
       );
-    console.log(response);
+     props.setFetchGoal(!props.fetchGoal)
   }
 
   
