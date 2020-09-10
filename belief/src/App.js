@@ -10,7 +10,7 @@ import axios from 'axios'
 
 function App() {
 
- const [goals, setGoals] = useState('');
+ const [goal, setGoal] = useState([]);
 
   useEffect(() => {
     const getGoals = async () => {
@@ -20,20 +20,13 @@ function App() {
           'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      setGoals(response.data.fields);
+      setGoal(response.data.records);
     }
     getGoals();
   }, []);
 
   return (
     <div className="App">
-      <div>
-        {
-          goals.map((goals) => (
-            <DisplayGoals goals={goals} key={goals.goal} />
-          ))
-        }
-      </div>
       <Switch>
         <Route exact path="/">
           <Logo />
@@ -41,8 +34,16 @@ function App() {
           <Sidebar />
           <InputGoal />
         </Route>
-        <Route path="/goal">
+        {/* <Route path="/">
           <InputGoal />
+        </Route> */}
+        <Route path="/goals"><div>
+          {
+            goal && goal.map((goal) => (
+              <DisplayGoals goal={goal} key={goal.id} />
+            ))
+          }
+          </div>
         </Route>
       </Switch>
     </div>

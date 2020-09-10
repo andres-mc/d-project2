@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import Logo from "./Logo"
+// import Logo from "./Logo"
 import Quote from './Quote'
 import Sidebar from './Sidebar'
 
@@ -32,7 +32,7 @@ const GoalInput = () => {
   
   return (
     <>
-    <Logo />
+    {/* <Logo /> */}
       <Quote />
       <Sidebar />
     <form onSubmit={handleSubmit}>
@@ -50,7 +50,8 @@ const GoalInput = () => {
         type="text"
         value={prior}
         onChange={(event) => setPrior(event.target.value)}
-      /> 
+        /> 
+        <br/>
       <button type="submit">let'sgo</button>
       </form>
       </>

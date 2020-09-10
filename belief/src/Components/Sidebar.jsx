@@ -36,7 +36,7 @@ export default class Sidebar extends React.Component {
         <StyledSideNav>
           <span>quotes</span>
         </StyledSideNav></Link>
-        <Link to="/goal">
+        <Link to="/goals">
         <StyledSideNav1>
           <span>goals</span>
           </StyledSideNav1>
