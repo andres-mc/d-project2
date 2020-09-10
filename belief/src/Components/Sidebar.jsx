@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
+// import { randomQuote } from './Components/Quote';
+
 
 const StyledSideNav1 = styled.div`
   position: fixed;
@@ -30,7 +32,7 @@ export default class Sidebar extends React.Component {
   render() {
     return (
       <div>
-        <Link to="/">
+        <Link to="/" >
         <StyledSideNav>
           <span>quotes</span>
         </StyledSideNav></Link>
@@ -47,3 +49,6 @@ export default class Sidebar extends React.Component {
 //https://trendmicro-frontend.github.io/react-sidenav/
 //https://reactjsexample.com/react-side-nav-component/
 //https://codeburst.io/how-to-create-a-navigation-bar-and-sidebar-using-react-348243ccd93
+
+
+//onClick={(e) => randomQuote(e)}
