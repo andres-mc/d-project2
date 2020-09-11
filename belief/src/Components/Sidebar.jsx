@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-// import { randomQuote } from './Components/Quote';
 
 const StyledSideNav1 = styled.div`
   position: fixed;
@@ -26,8 +25,6 @@ const StyledSideNav = styled.div`
   color: white;
 `;
 export default function Sidebar({ randomQuote, quotes }) {
-  /* This defines the actual bar going down the screen */
-
   return (
     <div>
       <Link to="/">
@@ -43,8 +40,5 @@ export default function Sidebar({ randomQuote, quotes }) {
     </div>
   );
 }
-//https://trendmicro-frontend.github.io/react-sidenav/
-//https://reactjsexample.com/react-side-nav-component/
-//https://codeburst.io/how-to-create-a-navigation-bar-and-sidebar-using-react-348243ccd93
 
-//onClick={(e) => randomQuote(e)}
+//sideBar reference >> https://codeburst.io/how-to-create-a-navigation-bar-and-sidebar-using-react-348243ccd93
