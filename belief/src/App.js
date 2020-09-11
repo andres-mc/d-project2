@@ -47,6 +47,7 @@ function App() {
     setActiveQuote(Math.floor(Math.random() * len))
   };
 
+  
   return (
     <div className="App">
       <Logo />
