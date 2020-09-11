@@ -15,7 +15,7 @@ function QuoteDisplay() {
       setQuotes(response.data);
       // setQuotes(await axios.get("https://type.fit/api/quotes").data);
     };
-    console.log()
+    // console.log()
     getQuote();
   }, []);
 
@@ -29,7 +29,6 @@ function QuoteDisplay() {
     <div className="app">
       {quotes &&
         <div className="quotes-container">
-        
           <h3>{quotes[activeQuote].text}</h3>
           <h5>{quotes[activeQuote].author}</h5>
           <button onClick={(e) => randomQuote(e, quotes)}>Random Quotes</button>

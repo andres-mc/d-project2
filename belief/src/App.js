@@ -34,12 +34,12 @@ function App() {
       <Sidebar />
       <InputGoal fetchGoal={fetchGoal} setFetchGoal={setFetchGoal} />
       <Switch>
-        <Route exact path="/">
+        {/* <Route exact path="/">
           
           <Quote />
           
           
-        </Route>
+        </Route> */}
         {/* <Route path="/">
           <InputGoal />
         </Route> */}
