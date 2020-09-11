@@ -28,11 +28,30 @@ function App() {
     getGoals();
   }, [fetchGoal]);
 
+  const [quotes, setQuotes] = useState();
+  const [activeQuote, setActiveQuote] = useState(0);
+  
+  useEffect(() => {
+    const getQuote = async () => {
+      const apiUrl = "https://type.fit/api/quotes";
+      const response = await axios.get(apiUrl);
+      setQuotes(response.data);
+      // setQuotes(await axios.get("https://type.fit/api/quotes").data);
+    };
+    // console.log()
+    getQuote();
+  }, []);
+
+  const randomQuote = (e, quotes) => {
+    const len = quotes.length;
+    setActiveQuote(Math.floor(Math.random() * len))
+  };
+
   return (
     <div className="App">
       <Logo />
-      <Sidebar />
-      <InputGoal fetchGoal={fetchGoal} setFetchGoal={setFetchGoal} />
+      <Sidebar randomQuote={randomQuote} quotes={quotes} />
+      <InputGoal quotes={quotes} activeQuote={activeQuote} fetchGoal={fetchGoal} setFetchGoal={setFetchGoal} />
       <Switch>
         {/* <Route exact path="/">
           

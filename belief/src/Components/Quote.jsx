@@ -4,25 +4,8 @@ import "../App.css";
 
 
 
-function QuoteDisplay() {
-  const [quotes, setQuotes] = useState();
-  const [activeQuote, setActiveQuote] = useState(0);
+function QuoteDisplay({ quotes, activeQuote }) {
   
-  useEffect(() => {
-    const getQuote = async () => {
-      const apiUrl = "https://type.fit/api/quotes";
-      const response = await axios.get(apiUrl);
-      setQuotes(response.data);
-      // setQuotes(await axios.get("https://type.fit/api/quotes").data);
-    };
-    // console.log()
-    getQuote();
-  }, []);
-
-  const randomQuote = (e, quotes) => {
-    const len = quotes.length;
-    setActiveQuote(Math.floor(Math.random() * len))
-  };
 
 
   return (
@@ -31,7 +14,7 @@ function QuoteDisplay() {
         <div className="quotes-container">
           <h3>{quotes[activeQuote].text}</h3>
           <h5>{quotes[activeQuote].author}</h5>
-          <button onClick={(e) => randomQuote(e, quotes)}>Random Quotes</button>
+          {/* <button onClick={(e) => randomQuote(e, quotes)}>Random Quotes</button> */}
       
         </div>
       }

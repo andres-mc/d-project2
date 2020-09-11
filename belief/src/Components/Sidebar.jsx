@@ -4,37 +4,38 @@ import { Link } from 'react-router-dom'
 // import { randomQuote } from './Components/Quote';
 
 
+
 const StyledSideNav1 = styled.div`
   position: fixed;
-  height: 60px;
-  width: 75px;     
+  height: 30px;
+  width: 55px;     
   z-index: 1;     
   top: 5em;      
   background-color: #222; 
   overflow-x: hidden;     
-  padding-top: 10px;
+  padding: 10px 10px 3px 10px;
   color: white;
 `
 const StyledSideNav = styled.div`
   position: fixed;
-  height: 60px;
-  width: 75px;     
+  height: 30px;
+  width: 55px;     
   z-index: 1;     
-  top: 9em;      
+  top: 8.4em;      
   background-color: darkgray; 
   overflow-x: hidden;     
-  padding-top: 10px;
+  padding: 10px 10px 3px 10px;
   color: white;
 `
-export default class Sidebar extends React.Component {
+export default function Sidebar({randomQuote, quotes}) {
   /* This defines the actual bar going down the screen */
 
-  render() {
+   
     return (
       <div>
         <Link to="/" >
-        <StyledSideNav>
-          <span>quotes</span>
+        <StyledSideNav className="sideButton" >
+          <span onClick={(e) => randomQuote(e, quotes)}>quotes</span>
         </StyledSideNav></Link>
         <Link to="/goals">
         <StyledSideNav1>
@@ -44,7 +45,7 @@ export default class Sidebar extends React.Component {
       </div>
       
     );
-  }
+  
 }
 //https://trendmicro-frontend.github.io/react-sidenav/
 //https://reactjsexample.com/react-side-nav-component/

@@ -33,8 +33,8 @@ const GoalInput = (props) => {
   return (
     <>
     {/* <Logo /> */}
-      <Quote />
-      <Sidebar />
+      <Quote quotes={props.quotes} activeQuote={props.activeQuote} />
+      {/* <Sidebar /> */}
     <form onSubmit={handleSubmit}>
       <label htmlFor="goal" className="inputLabel">Goal</label>
       <input className="inputSubmit"
